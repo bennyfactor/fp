@@ -6,7 +6,7 @@
 	<head>
 		<title>iaatb.net</title>
 		<?php
-			$cssroot = function_exists('get_stylesheet_directory_uri') ? get_stylesheet_directory_uri() . '/stylesheets' : '/stylesheets' ;
+			$cssroot = function_exists('get_stylesheet_directory_uri') ? get_stylesheet_directory_uri() . '/css' : '/css' ;
       $fileroot = function_exists('get_stylesheet_directory_uri') ? get_stylesheet_directory_uri() . '' : '/' ;
 		?>
 		<link rel="stylesheet" href="<?php echo $cssroot ?>/style.css" type="text/css" media="screen" />
