@@ -1,162 +1,319 @@
+@media only screen and (min-width: 799px) {
+  /* line 1, ../stylesheets/medium/layouts/_home.sass */
+  body {
+    font: 1em Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: black;
+    margin-top: 0;
+  }
 
-body {
-  font: 1em Helvetica, Arial, Sans-Serif;
-  text-align: center;
-  color: black;
-  margin-top: 0;
-}
+  /* line 7, ../stylesheets/medium/layouts/_home.sass */
+  h1 {
+    font-size: 2em;
+    padding: 0;
+    margin: 0s;
+  }
 
-h1 {
-  font-size: 2em;
-  padding: 0;
-  margin: 0;
-}
+  /* line 12, ../stylesheets/medium/layouts/_home.sass */
+  h4 {
+    display: none;
+  }
 
-h4 {
-  display: none;
-}
+  /* line 15, ../stylesheets/medium/layouts/_home.sass */
+  form {
+    width: 28em;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
 
-form {
-  width: 28em;
-  background-color: #eeeeee;
-  border: 1px solid #cccccc;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1em;
-}
+  /* line 23, ../stylesheets/medium/layouts/_home.sass */
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
 
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
+  /* line 28, ../stylesheets/medium/layouts/_home.sass */
+  a {
+    color: #336699;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-a {
-  color: #336699;
-  text-decoration: none;
-  font-weight: bold;
-}
+  /* line 33, ../stylesheets/medium/layouts/_home.sass */
+  a:visited {
+    color: #336699;
+  }
 
-a:visited {
-  color: #336699;
-}
+  /* line 36, ../stylesheets/medium/layouts/_home.sass */
+  a:hover {
+    color: #336699;
+  }
 
-a:hover {
-  color: #336699;
-}
+  /* line 39, ../stylesheets/medium/layouts/_home.sass */
+  .error, .success {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
 
-.error, .success {
-  font-size: 1.2em;
-  font-weight: bold;
-}
+  /* line 43, ../stylesheets/medium/layouts/_home.sass */
+  .error {
+    color: #ea2001;
+  }
 
-.error {
-  color: #ea2001;
-}
+  /* line 46, ../stylesheets/medium/layouts/_home.sass */
+  .success {
+    color: #99ccff;
+  }
 
-.success {
-  color: #99ccff;
-}
+  /* line 49, ../stylesheets/medium/layouts/_home.sass */
+  .date {
+    color: #ea2001;
+    font-weight: bold;
+  }
 
-.date {
-  color: #ea2001;
-  font-weight: bold;
-}
+  /* line 53, ../stylesheets/medium/layouts/_home.sass */
+  .content {
+    position: absolute;
+    bottom: 20px;
+    width: 800px;
+    right: 16px;
+  }
 
-.content {
-  position: absolute;
-  left: 465px;
-  bottom: 20px;
-  width: 800px;
-}
-html, body { height:100%; }
+  /* line 59, ../stylesheets/medium/layouts/_home.sass */
+  html {
+    min-height: 768px;
+  }
 
- div#footer{
-  position:absolute;
-  left:0;
-width:646px;
-  height: 100%;
-z-index:-1;
- background-image: none;
-  overflow: hidden;
+  /* line 62, ../stylesheets/medium/layouts/_home.sass */
+  html, body {
+    height: 100%;
+  }
 
+  /* line 65, ../stylesheets/medium/layouts/_home.sass */
+  #footer {
+    position: absolute;
+    left: 0;
+    width: 646px;
+    height: 100%;
+    z-index: -1;
+    background-image: none;
+    overflow: hidden;
+    min-height: 768px;
+  }
 
+  /* line 75, ../stylesheets/medium/layouts/_home.sass */
+  #footer-spacer {
+    height: 100%;
+    margin: 0 auto;
+    background-image: none;
+  }
 
- }
- div#footer-spacer{
- height: 100%;
- margin:     0 auto 0; /*this margin size is replaced by  javascript*/
- background-image: none;
+  /* line 80, ../stylesheets/medium/layouts/_home.sass */
+  #footer-image {
+    overflow: hidden;
+    background-image: url("../images/vector.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 924px;
+  }
 
-}
- div#footer-image{
- overflow:hidden;
-  background-image: url(../images/vector.png);
-background-repeat:no-repeat;
-background-position:bottom left;
- height: 924px;
-}
+  /* line 87, ../stylesheets/medium/layouts/_home.sass */
+  .content a, .content a:hover, .content a:visited, .content a:active {
+    color: #fff;
+  }
 
-.content a, .content a:hover, .content a:visited, .content a:active {
-  color: #fff;
+  /* line 90, ../stylesheets/medium/layouts/_home.sass */
+  a.blog span {
+    width: 120px;
+    height: 170px;
+    background-color: #ea2001;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 100, ../stylesheets/medium/layouts/_home.sass */
+  a.style span {
+    width: 120px;
+    height: 170px;
+    background-color: #913;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 110, ../stylesheets/medium/layouts/_home.sass */
+  a.pics span {
+    width: 110px;
+    height: 170px;
+    background-color: #99ccff;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 120, ../stylesheets/medium/layouts/_home.sass */
+  a.twitter span {
+    width: 120px;
+    height: 170px;
+    background-color: #6699cc;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 130, ../stylesheets/medium/layouts/_home.sass */
+  a.github span {
+    width: 120px;
+    height: 170px;
+    background-color: #336699;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 140, ../stylesheets/medium/layouts/_home.sass */
+  a.express span {
+    width: 110px;
+    height: 170px;
+    background-color: #003366;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
 }
-a.blog span {
-  width:120px;
-  height:170px;
-  background-color:#ea2001;
-  vertical-align: bottom;
-  text-align: right;
-  padding: 4px;
-  border: 2px solid #fff;
-  display: inline-block;
+@media only screen and (min-width: 900px) {
+  /* line 1, ../stylesheets/large/layouts/_home.sass */
+  html, body {
+    height: 100%;
+  }
+
+  /* line 4, ../stylesheets/large/layouts/_home.sass */
+  #footer {
+    position: absolute;
+    left: 0;
+    width: 646px;
+    height: 100%;
+    z-index: -1;
+    background-image: none;
+    overflow: hidden;
+  }
+
+  /* line 13, ../stylesheets/large/layouts/_home.sass */
+  #footer-spacer {
+    height: 100%;
+    margin: 0 auto;
+    background-image: none;
+  }
+
+  /* line 18, ../stylesheets/large/layouts/_home.sass */
+  #footer-image {
+    overflow: hidden;
+    background-image: url("../images/vector.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    height: 924px;
+  }
+
+  /* line 25, ../stylesheets/large/layouts/_home.sass */
+  .content a, .content a:hover, .content a:visited, .content a:active {
+    color: #fff;
+  }
+
+  /* line 28, ../stylesheets/large/layouts/_home.sass */
+  a.blog span {
+    width: 120px;
+    height: 170px;
+    background-color: #ea2001;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 38, ../stylesheets/large/layouts/_home.sass */
+  a.style span {
+    width: 120px;
+    height: 170px;
+    background-color: #913;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 48, ../stylesheets/large/layouts/_home.sass */
+  a.pics span {
+    width: 110px;
+    height: 170px;
+    background-color: #99ccff;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 58, ../stylesheets/large/layouts/_home.sass */
+  a.twitter span {
+    width: 120px;
+    height: 170px;
+    background-color: #6699cc;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 68, ../stylesheets/large/layouts/_home.sass */
+  a.github span {
+    width: 120px;
+    height: 170px;
+    background-color: #336699;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
+
+  /* line 78, ../stylesheets/large/layouts/_home.sass */
+  a.express span {
+    width: 110px;
+    height: 170px;
+    background-color: #003366;
+    vertical-align: bottom;
+    text-align: right;
+    padding: 4px;
+    border: 2px solid #fff;
+    display: inline-block;
+  }
 }
-a.style span {
-  width:120px;
-  height:170px;
-  background-color:#913;
-  vertical-align: bottom;
-  text-align: right;
-  padding: 4px;
-  border: 2px solid #fff;
-  display: inline-block;
-}
-a.pics span {
-  width:110px;
-  height:170px;
-  background-color:#99ccff; v
-  vertical-align: bottom;
-  text-align: right;
-  padding: 4px;
-  border: 2px solid #fff;
-  display: inline-block;
-}
-a.twitter span {
-  width:120px;
-  height:170px;
-  background-color:#6699cc;
-  vertical-align: bottom;
-  text-align: right;
-  padding: 4px;
-  border: 2px solid #fff;
-  display: inline-block;
-}
-a.github span {
-  width:120px;
-  height:170px;
-  background-color:#336699;
-  vertical-align: bottom;
-  text-align: right;
-  padding: 4px;
-  border: 2px solid #fff;
-  display: inline-block;
-}
-a.express span {
-  width:110px;
-  height:170px;
-  background-color:#003366;
-  vertical-align: bottom;
-  text-align: right;
-  padding: 4px;
-  border: 2px solid #fff;
-  display: inline-block;
+@media only screen and (min-width: 1280px) {
+  /* line 1, ../stylesheets/jumbo/layouts/_home.sass */
+  .content {
+    position: absolute;
+    left: 465px;
+    bottom: 20px;
+    width: 800px;
+  }
 }

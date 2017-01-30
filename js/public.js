@@ -12,7 +12,8 @@ function proceed () {
       //breakpoint between small and medium viewports
       var smallViewport = 680;
       //define the height of the fixed bg image
-      var imgheight= 926;
+      var imgHeight= 926;
+      var minHeight= 768;
     /*---*/
 
     /*--- functions */
@@ -33,16 +34,26 @@ function proceed () {
       }
 
       function backgroundImage() {
-        if (window.innerHeight < imgheight) {
+        if (window.innerHeight < minHeight) {
+          $('#footer-spacer').css( { "margin-bottom" : '-' + minHeight + 'px' });
+        } else if (window.innerHeight < imgHeight) {
           $('#footer-spacer').css( { "margin-bottom" : '-' + window.innerHeight + 'px' });
         } else {
-          $('#footer-spacer').css( { "margin-bottom" : '-' + imgheight + 'px' });
+          $('#footer-spacer').css( { "margin-bottom" : '-' + imgHeight + 'px' });
         }
+      }
+
+
+
+      function backgroundImageInspector() {
+        var txt=document.getElementById("footer-spacer");
+        txt.innerHTML=window.innerHeight+" "+ txt.style.cssText;
       }
 
     /*--- responsive conditionals: load time */
 
       backgroundImage();
+      backgroundImageInspector();
 
       //change menu style based on viewport size
       if (window.innerWidth <= (smallViewport + scrollbarWidth()) ) {
@@ -57,9 +68,7 @@ function proceed () {
       $(window).resize(function(){
 
         backgroundImage();
-
-        var txt=document.getElementById("footer-spacer");
-        txt.innerHTML=window.innerHeight+" "+ txt.style.cssText;
+        backgroundImageInspector();
         //flip between small and large size menu on screen resize
         if(window.innerWidth <= (smallViewport + scrollbarWidth()) ) {
 
