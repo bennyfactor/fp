@@ -50,32 +50,28 @@ a:hover
   color: #ea2001
   font-weight: bold
 
+
 .content
   position: absolute
   bottom: 20px
   width: 800px
   right: 16px
+  z-index: 1
 
-html
-  min-height: 768px
 
 html, body
   height: 100%
 
 #footer
-  position: absolute
-  left: 0
-  width: 646px
-  height: 100%
-  z-index: -1
-  background-image: none
+  height: 100vh
   overflow: hidden
-  min-height: 768px
-
-#footer-spacer
-  height: 100%
-  margin: 0 auto /* this margin size is replaced by javascript */
-  background-image: none
+  position: relative
+  z-index: 0
+  .inner
+    min-height: 924px
+    top: 0
+    position: absolute
+    height: 100%
 
 #footer-image
   overflow: hidden
@@ -83,6 +79,9 @@ html, body
   background-repeat: no-repeat
   background-position: bottom left
   height: 924px
+  position: absolute
+  bottom: 0
+  width: 650px
 
 .content a, .content a:hover, .content a:visited, .content a:active
   color: #fff
