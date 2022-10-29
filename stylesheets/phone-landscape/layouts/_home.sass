@@ -1,13 +1,14 @@
 body
-  font: 1em Helvetica, sans-serif
+  font: 1em Helvetica, Arial, Sans-Serif
   text-align: center
-  color: black
-  margin-top: 0
+  color: white
+  margin: 0
 
 h1
-  font-size: 2em
+  font-size: 1.5em
   padding: 0
-  margin: 0s
+  margin: 0
+
 
 h4
   display: none
@@ -36,6 +37,9 @@ a:visited
 a:hover
   color: #336699
 
+br
+  height: 1px
+
 .error, .success
   font-size: 1.2em
   font-weight: bold
@@ -53,12 +57,19 @@ a:hover
 
 .content
   position: absolute
-  bottom: 20px
+  bottom: 0
   width: 800px
   right: 0
   z-index: 1
 
-
+.inner
+  text-shadow: .707px .707px 0 #000, -.707px -.707px 0 #000, -.707px .707px 0 #000, .707px -.707px 0 #000, 1px 0px 0 #000, -1px 0px 0 #000, 0px 1px 0 #000, 0px -1px 0 #000
+  img
+    filter: drop-shadow(.707px .707px 0 #fff) drop-shadow(-.707px -.707px 0 #fff) drop-shadow(-.707px .707px 0 #fff) drop-shadow(.707px -.707px 0 #fff) drop-shadow(1px 0px 0 #fff) drop-shadow(-1px 0px 0 #fff) drop-shadow(0px 1px 0 #fff) drop-shadow(0px -1px 0 #fff)
+    width: 25%
+    height: 25%
+  a
+    text-shadow: none
 
 html, body
   height: 100%
@@ -76,20 +87,20 @@ html, body
 
 #footer-image
   overflow: hidden
-  background-image: url("../images/vector.png")
+  background-image: url("../images/header.jpeg")
   background-repeat: no-repeat
-  background-position: bottom left
-  height: 924px
+  background-size: cover
+  height: 100vh
   position: absolute
-  bottom: 0
-  width: 650px
+  top: 0
+  width: 100vw
 
 .content a, .content a:hover, .content a:visited, .content a:active
   color: #fff
 
 a.blog span
-  width: 120px
-  height: 170px
+  width: 110px
+  height: 1.25em
   background-color: #ea2001
   vertical-align: bottom
   text-align: right
@@ -98,8 +109,8 @@ a.blog span
   display: inline-block
 
 a.style span
-  width: 120px
-  height: 170px
+  width: 110px
+  height: 1.25em
   background-color: #913
   vertical-align: bottom
   text-align: right
@@ -109,7 +120,7 @@ a.style span
 
 a.pics span
   width: 110px
-  height: 170px
+  height: 1.25em
   background-color: #99ccff
   vertical-align: bottom
   text-align: right
@@ -118,8 +129,8 @@ a.pics span
   display: inline-block
 
 a.twitter span
-  width: 120px
-  height: 170px
+  width: 110px
+  height: 1.25em
   background-color: #6699cc
   vertical-align: bottom
   text-align: right
@@ -128,8 +139,8 @@ a.twitter span
   display: inline-block
 
 a.github span
-  width: 120px
-  height: 170px
+  width: 110px
+  height: 1.25em
   background-color: #336699
   vertical-align: bottom
   text-align: right
@@ -139,7 +150,7 @@ a.github span
 
 a.express span
   width: 110px
-  height: 170px
+  height: 1.25em
   background-color: #003366
   vertical-align: bottom
   text-align: right

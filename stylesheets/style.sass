@@ -6,24 +6,40 @@
 // Site Settings
 @import settings
 
+// @include font-face("Futura Book", font-files("hp-futura/futurbo_ot-webfont.eot", "hp-futura/futurbo_ot-webfont.woff", "hp-futura/futurbo_ot-webfont.svg#webfont", "hp-futura/futurbo_ot-webfont.ttf"))
+// @include font-face("Futura Book Italic", font-files("hp-futura/futbit_ot-webfont.eot", "hp-futura/futbit_ot-webfont.woff", "hp-futura/futbit_ot-webfont.svg#webfont", "hp-futura/futbit_ot-webfont.ttf"))
+// @include font-face("Futura Bold", font-files("hp-futura/futurbol_ot-webfont.eot", "hp-futura/futurbol_ot-webfont.woff", "hp-futura/futurbol_ot-webfont.svg#webfont", "hp-futura/futurbol_ot-webfont.ttf"))
+// @include font-face("Futura Light", font-files("hp-futura/futurlig_ot-webfont.eot", "hp-futura/futurlig_ot-webfont.woff", "hp-futura/futurlig_ot-webfont.svg#webfont", "hp-futura/futurlig_ot-webfont.ttf"))
+// @include font-face("Futura Medium", font-files("hp-futura/futurmed_ot-webfont.eot", "hp-futura/futurmed_ot-webfont.woff", "hp-futura/futurmed_ot-webfont.svg#webfont", "hp-futura/futurmed_ot-webfont.ttf"))
+
+
+// phones
+// tiny
 @media only screen and (max-width: $smallMinWidth)
   // @import tiny/content
   // @import tiny/layouts
 
+// small
 @media only screen and (min-width: $smallMinWidth) and (max-width: $mediumMinWidth)
   // @import small/content
   // @import small/layouts
 
+//phone-landscape
+@media only screen and (min-width: $mediumMinWidth) and (max-height: $desktopHeight)
+  @import phone-landscape/layouts
+
+// desktop
+// medium
 @media only screen and (min-width: $mediumMinWidth) and (min-height: $desktopHeight)
   // @import medium/content
   @import medium/layouts
 
-
+// large
 @media only screen and (min-width: $largeMinWidth) and (min-height: $desktopHeight)
   // @import large/content
   @import large/layouts
 
-
+// jumbo
 @media only screen and (min-width: $jumboMinWidth) and (min-height: $desktopHeight)
   // @import jumbo/content
   @import jumbo/layouts
