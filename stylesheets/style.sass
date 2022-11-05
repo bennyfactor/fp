@@ -15,14 +15,14 @@
 
 // phones
 // tiny
-@media only screen and (max-width: $smallMinWidth)
+@media only screen and (max-width: $tinyMaxWidth)
   // @import tiny/content
-  // @import tiny/layouts
+  @import tiny/layouts
 
 // small
-@media only screen and (min-width: $smallMinWidth) and (max-width: $mediumMinWidth)
+@media only screen and (min-width: $smallMinWidth) and (max-width: $smallMaxWidth)
   // @import small/content
-  // @import small/layouts
+  @import small/layouts
 
 //phone-landscape
 @media only screen and (min-width: $mediumMinWidth) and (max-height: $desktopHeight)

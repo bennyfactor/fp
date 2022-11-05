@@ -1,0 +1,133 @@
+@include font-face("pablo_stdregular", font-files("pablo/pablostd-webfont.woff", "pablo/pablostd-webfont.woff2", "pablo/pablostd-webfont.svg"))
+
+body
+  font-size: 1em
+  font-family: pablo_stdregular
+  text-align: center
+  color: black
+  margin-top: 0
+
+h1
+  font-size: 2em
+  padding: 0
+  margin: 0s
+
+h4
+  display: none
+
+form
+  width: 28em
+  background-color: #eee
+  border: 1px solid #ccc
+  margin-left: auto
+  margin-right: auto
+  padding: 1em
+
+fieldset
+  border: 0
+  margin: 0
+  padding: 0
+
+a
+  color: #336699
+  text-decoration: none
+  font-weight: bold
+
+a:visited
+  color: #336699
+
+a:hover
+  color: #336699
+
+.error, .success
+  font-size: 1.2em
+  font-weight: bold
+
+.error
+  color: #ea2001
+
+.success
+  color: #99ccff
+
+.date
+  color: #ea2001
+  font-weight: bold
+
+#main
+  .content
+    position: absolute
+    z-index: 1
+    .inner
+      img
+        width: (100vh * ( 80/1628 ) )
+        position: absolute
+        left: calc( (100vh * ( 868/1628 ) ) - (100vh * ( 100/1628 ) ) )
+        top: calc( 100vh * ( 10/1628 ) )
+      h1, span.est
+        display: none
+
+html, body
+  height: 100%
+  margin: 0
+  overflow: hidden
+
+#footer
+  height: 100%
+  width: 100%
+  overflow: hidden
+  top: 0
+  .inner
+    min-height: 100vh
+    top: 0
+    position: absolute
+    height: 100%
+
+#footer-image
+  overflow: hidden
+  background-image: url("../images/iaatb4.png") //868 x 1628
+  background-repeat: no-repeat
+  background-position: top left
+  background-size: contain
+  height: 100vh
+  position: absolute
+  top: 0
+  width:  (100vh*(868/1628))
+
+.content a, .content a:hover, .content a:visited, .content a:active
+  color: #ea2001
+  font-size: 1.5em
+  line-height: 1em
+
+a.blog span
+  text-align: right
+  padding: 4px
+  display: block
+
+a.style span
+  text-align: right
+  padding: 4px
+  display: block
+
+a.pics span
+  text-align: right
+  padding: 4px
+  display: block
+
+
+a.twitter span
+  text-align: right
+  padding: 4px
+  display: block
+
+
+a.github span
+  text-align: right
+  padding: 4px
+  display: block
+
+
+a.express span
+  text-align: right
+  padding: 4px
+  display: block
+

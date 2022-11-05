@@ -21,7 +21,7 @@
 			<div class="inner">
 				<img src="<?php echo $fileroot ?>/images/iaatblarge-t.png" />
 				<h1>iaatb.net</h1>
-				since 2002<br /><br />
+				<span class="est">since 2002</span><br /><br />
 				<a href="#" class="blog"><span>&nbsp;</span></a>
 				<a href="/style/" class="style"><span>style</span></a>
 				<a href="/pics/" class="pics"><span>pics</span></a>
