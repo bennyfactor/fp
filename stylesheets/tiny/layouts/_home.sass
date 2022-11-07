@@ -94,9 +94,16 @@ html, body
   width:  (100vh*(868/1628))
 
 .content a, .content a:hover, .content a:visited, .content a:active
-  color: #ea2001
-  font-size: 1.5em
+  color: #ffffff
+  font-size: 2em
   line-height: 1em
+  text-shadow: (1 /(2 * 16))*1em (2 /(2 * 16))*1em 0 #EA2001, (1 /(2 * 16))*1em (1 /(2 * 16))*1em (2 /(2 * 16)*1em) rgba(0,0,0,0.5)
+
+
+.content a:hover, .content a:active
+  color: #ea2001
+  text-shadow: (1 /(2 * 16))*1em (2 /(2 * 16))*1em 0 #fff, (1 /(2 * 16))*1em (1 /(2 * 16))*1em (2 /(2 * 16)*1em) rgba(0,0,0,0.05)
+
 
 a.blog span
   text-align: right
