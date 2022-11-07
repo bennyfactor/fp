@@ -1,0 +1,15 @@
+SetEnvIfNoCase Request_URI \.gif$ allow_extension=1
+SetEnvIfNoCase Request_URI \.png$ allow_extension=1
+SetEnvIfNoCase Request_URI \.jpg$ allow_extension=1
+SetEnvIfNoCase Request_URI \.jpeg$ allow_extension=1
+SetEnvIfNoCase Request_URI \.css$ allow_extension=1
+SetEnvIfNoCase Request_URI \.js$ allow_extension=1
+SetEnvIfNoCase Request_URI \.svg$ allow_extension=1
+SetEnvIfNoCase Request_URI \.woff$ allow_extension=1
+SetEnvIfNoCase Request_URI \.woff2$ allow_extension=1
+SetEnvIfNoCase Request_URI \.eot$ allow_extension=1
+SetEnvIfNoCase Request_URI \.svg$ allow_extension=1
+
+Order Deny,Allow
+Deny From All
+Allow From env=allow_extension
