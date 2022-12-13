@@ -11,6 +11,7 @@
 		?>
 		<link rel="stylesheet" href="<?php echo $cssroot ?>/style.css" type="text/css" media="screen" />
 		<script type="text/javascript" src="<?php echo $fileroot ?>/js/public.js"></script>
+		<link rel="me" href="https://mastodon.social/@bennyfactor">     
 
 
 
