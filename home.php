@@ -11,7 +11,7 @@
 		?>
 		<link rel="stylesheet" href="<?php echo $cssroot ?>/style.css" type="text/css" media="screen" />
 		<script type="text/javascript" src="<?php echo $fileroot ?>/js/public.js"></script>
-		<link rel="me" href="https://mastodon.social/@bennyfactor">     
+		<link rel="me" href="https://mastodon.social/@bennyfactor">
 
 
 
@@ -26,8 +26,8 @@
 				<a href="#" class="blog"><span>&nbsp;</span></a>
 				<a href="/style/" class="style"><span>style</span></a>
 				<a href="/pics/" class="pics"><span>pics</span></a>
-				<a href="https://twitter.com/bennyfactor/" class="twitter"><span>twitter</span></a>
-				<a href="https://github.com/bennyfactor" class="github"><span>GitHub</span></a>
+				<a href="https://linktr.ee/bennyfactor" class="social"><span>social</span></a>
+				<a href="https://github.com/bennyfactor" class="github"><span>github</span></a>
 				<a href="#" class="express"><span>&nbsp;</span></a>
 				<br clear=all />
 			</div>
